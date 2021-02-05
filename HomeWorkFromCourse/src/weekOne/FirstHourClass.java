@@ -1,6 +1,6 @@
 package weekOne;
 
-public class FirstHour {
+public class FirstHourClass {
 	public void printMessage() {
 		System.out.println("Hello Java");
 	}
