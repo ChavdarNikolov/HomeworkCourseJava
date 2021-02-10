@@ -22,14 +22,19 @@ public class SecondHourClass {
 		
 		//4
 		int yesterdayIceCreamCount = 20_000;
-		String message = (iceCreamCountForADay > yesterdayIceCreamCount) ? "Good Job" : "Low Capacity";
+		String message = (iceCreamCountForADay > yesterdayIceCreamCount) 
+						? "Good Job" 
+						: "Low Capacity";
 		System.out.println(message);
 		
 		//5
 		int numberOfIceCreamMinPerDay = 1_000;
 		System.out.println("Number of ice cream minimum per day: " + numberOfIceCreamMinPerDay);
 		numberOfIceCreamMinPerDay += iceCreamCountForADay;
-		System.out.println("Number of ice cream with user created ice cream " + numberOfIceCreamMinPerDay);
+		System.out.println("Number of ice cream with user created ice cream " + 
+							numberOfIceCreamMinPerDay);
+		
+		input.close();
 	}
 }
 

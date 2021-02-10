@@ -15,8 +15,13 @@ public class Main {
 		
 //		System.out.println();
 		
-		weekTwo.SecondHourClass iceCreamDisplayMoreInfo = new weekTwo.SecondHourClass();
-		iceCreamDisplayMoreInfo.operators();
+//		weekTwo.SecondHourClass iceCreamDisplayMoreInfo = new weekTwo.SecondHourClass();
+//		iceCreamDisplayMoreInfo.operators();
+		
+//		System.out.println();
+		
+		weekThree.FirstHourClass accessTerminal = new weekThree.FirstHourClass();
+		accessTerminal.accessTerminalMethod();
 	}
 
 }
