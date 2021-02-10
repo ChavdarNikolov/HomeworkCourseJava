@@ -6,23 +6,24 @@ public class FirstHourClass {
 	Scanner input = new Scanner(System.in);
 	
 	public void accessTerminalMethod() {
-		//Variables
-		//1
+		//Variables		
+		System.out.println("Enter your name: ");
+		String name = input.nextLine();
 		System.out.println("Enter your serial key ID: ");
 		int serialNumberID = input.nextInt();
+		
 		boolean isNumberMoreThanTwoDigits = serialNumberID > 99 && serialNumberID < 100_000;
 		boolean isNumberMoreThanSixDigits = serialNumberID > 999_999;
 		boolean isNumberSixDigits = serialNumberID >= 100_000 && serialNumberID <= 999_999;
-		//2 
+
 		String personVip;
 		boolean isPersonVip = serialNumberID % 2 == 0;
-		//3
+
 		String secondDishOption;
 		boolean hasSecondDishOption = serialNumberID % 10 > 3;
-		//4
+		
 		String specialVip;
 		boolean isSpecialVip = hasSecondDishOption && isPersonVip;
-		//5
 
 		
 		//Solutions
@@ -49,20 +50,29 @@ public class FirstHourClass {
 		specialVip = isSpecialVip ? "Super VIP" : "Not Super VIP";
 		System.out.println(specialVip);
 		
-		//5
+		//5, 6, 7
+		System.out.println("Select from the ");
 		System.out.println("*** Menu ***");
 		System.out.println("1. French Fries");
 		System.out.println("2. Fish");
 		System.out.println("3. Salad");
 		System.out.println("4. Steak");
 		System.out.println("5. Pizza");
+		System.out.println("6. Nothing");
 		
 		String[] menu = {
-				"1. French Fries", "2. Fish", "3. Salad", "4. Steak", "5. Pizza"
+				"1. French Fries - 10BGN", 
+				"2. Fish - 15BGN", 
+				"3. Salad - 12BGN", 
+				"4. Steak - 13BGN", 
+				"5. Pizza - 10BGN",
+				"6. Nothing - 1BGN"
 		};	
-	
+		
 		int selectMenuOption = input.nextInt();
-		System.out.println("You picked: " + menu[selectMenuOption - 1]);
+		System.out.println("You picked: " + menu[selectMenuOption - 1] + " " + name);
+		
+		
 	}
 }
 
