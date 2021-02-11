@@ -20,7 +20,7 @@ public class Main {
 		
 //		System.out.println();
 		
-		weekThree.FirstHourClass accessTerminal = new weekThree.FirstHourClass();
+		week3.FirstHourClass accessTerminal = new week3.FirstHourClass();
 		accessTerminal.accessTerminalMethod();
 	}
 

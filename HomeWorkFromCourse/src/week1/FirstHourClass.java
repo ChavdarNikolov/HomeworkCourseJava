@@ -1,4 +1,4 @@
-package weekOne;
+package week1;
 
 public class FirstHourClass {
 	public void printMessage() {
